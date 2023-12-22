@@ -1,0 +1,20 @@
+@import 'vars';
+@import "mixins";
+
+.auth-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include desktop-small{
+    flex-direction: column;
+    margin-top: 44px;
+  }
+
+  &__text {
+    color: $black;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+  }
+}

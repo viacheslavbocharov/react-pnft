@@ -1,0 +1,14 @@
+@import "vars";
+@import "mixins";
+
+.auth-footer {
+  color: $Accent-2;
+  font-family: var(--ff);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  @include desktop-small {
+    display: none;
+  }
+}

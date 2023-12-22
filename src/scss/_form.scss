@@ -1,0 +1,182 @@
+@import "vars";
+@import "mixins";
+
+.auth-form {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 108px;
+  @include desktop-small {
+    min-width: 327px;
+    width: 100%;
+    margin: 0;
+  }
+
+  @include mobile {
+    min-width: unset;
+  }
+
+  &__title {
+    color: $c-headline;
+    font-family: var(--ff);
+    font-size: 40rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 8rem;
+    @include desktop-small {
+      margin-top: 70rem;
+    }
+  }
+
+  &__desc {
+    color: $Accent-2;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    margin-bottom: 56rem;
+    @include desktop {
+      margin-bottom: 35rem;
+    }
+  }
+
+  &__field {
+    color: $Accent-2;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    background: $background;
+
+    ::placeholder {
+      color: $Accent-2;
+      font-family: var(--ff);
+      font-size: 16rem;
+      font-weight: 400;
+      line-height: 24rem;
+    }
+  }
+
+  &__field-name {
+    color: $c-headline;
+    font-family: var(--ff);
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 20rem;
+    margin-bottom: 8rem;
+  }
+
+  &__field-area {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    border-radius: 8px;
+    border: 1px solid $c-field-border;
+    margin-bottom: 20rem;
+  }
+
+  &__field-img {
+    cursor: pointer;
+  }
+
+  &__extras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 32rem;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__checkbox-text {
+    color: $c-headline;
+    font-family: var(--ff);
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 20rem;
+  }
+
+  &__alt-check {
+    color: $c-primary;
+    font-family: var(--ff);
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 20rem;
+    a {
+      color: $c-primary;
+    }
+  }
+
+  &__sign-in {
+    display: block;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16rem;
+    background: $c-primary;
+    text-align: center;
+    color: $white;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 20rem;
+  }
+
+  &__sign-in-google {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid $c-field-border;
+    padding: 10px 0;
+
+    margin-bottom: 20rem;
+
+    img {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__sign-in-google-text {
+    color: $c-headline;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 20rem;
+  }
+
+  &__no-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__no-account-text {
+    color: $c-headline;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+  }
+
+  &__alt-check {
+    color: $c-primary;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 24rem;
+  }
+}
